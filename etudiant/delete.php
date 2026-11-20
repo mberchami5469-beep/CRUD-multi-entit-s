@@ -9,7 +9,7 @@ if (!isset($_GET["id_etudiant"])) {
 $id_etudiant = $_GET["id_etudiant"];
 
 $sql = "
-    DELETE FROM books
+    DELETE FROM etudiant
     WHERE id_etudiant = :id_etudiant
 ";
 
@@ -20,4 +20,5 @@ $statement->execute([
 ]);
 
 header("Location: index.php");
-exit;
+exit; 
+?>

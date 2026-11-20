@@ -27,7 +27,7 @@ if (!$etudiant) {
     die("etudiant non trouve.");
 }
 
-$sql = "SELECT * FROM formation";
+$sql = "SELECT id_formation, intitule FROM formation ORDER BY intitule";
 
 $statement = $connexion->query($sql);
 
@@ -76,7 +76,7 @@ if (
 }
 
 ?>
-```html
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -106,7 +106,14 @@ if (
         </div>
 
         <br>
+  <br>
 
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" 
+                   value="<?php echo htmlspecialchars($etudiant["email"]); ?>" required>
+        </div>
+          <br>
         <div>
             <label for="date_naissance">Date de naissance :</label>
             <input type="date" id="date_naissance" name="date_naissance"
@@ -149,4 +156,3 @@ if (
 
 </body>
 </html>
-```

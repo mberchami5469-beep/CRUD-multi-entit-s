@@ -1,6 +1,6 @@
 <?php
 require_once "../database/connexion.php";
-$sql = "SELECT * FROM formation";
+$sql = "SELECT id_formation, intitule FROM formation ORDER BY intitule";
 $statement = $connexion->query($sql);
 $formation = $statement->fetchAll(PDO::FETCH_ASSOC);
 if (
@@ -82,7 +82,7 @@ exit();
         <?php foreach ($formation as $f) { ?>
 
             <option value="<?php echo $f["id_formation"]; ?>">
-                <?php echo $f["intitule"]; ?>
+                <?php echo htmlspecialchars($f["intitule"]); ?>
             </option>
 
         <?php } ?>

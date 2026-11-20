@@ -101,9 +101,7 @@ $etudiants = $statement->fetchAll(
                         <?php echo $etudiant["date_naissance"]; ?>
                     </td>
 
-                    <td>
-                        <?php echo $etudiant["intitule"]; ?>
-                    </td>
+                  
 
                     <td>
                         <a href="edit.php?id_etudiant=<?php echo $etudiant["id_etudiant"]; ?>">
