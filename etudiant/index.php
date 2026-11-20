@@ -14,7 +14,7 @@ $sql = "
 
     FROM etudiant
 
-    JOIN formation
+    LEFT JOIN formation
         ON etudiant.id_formation = formation.id_formation
 ";
 
@@ -32,8 +32,8 @@ $etudiants = $statement->fetchAll(
 <head>
     <meta charset="UTF-8">
     <title>Etudiants</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
 </head>
 
 <body class="dashboard-page">

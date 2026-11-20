@@ -1,0 +1,200 @@
+
+
+.dashboard-page {
+    min-height: 100vh;
+    background: #f5f6f8;
+    color: #263445;
+    padding: 35px 7%;
+    font-family: Arial, sans-serif;
+}
+
+.page-shell {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.page-topbar {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e1e5e9;
+    margin-bottom: 32px;
+}
+
+.home-link {
+    color: #294b73;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.page-caption {
+    color: #858f9c;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.page-heading h1 {
+    font-size: 30px;
+    margin: 0 0 8px;
+}
+
+.page-heading p {
+    color: #737f8c;
+    font-size: 13px;
+    margin: 0;
+}
+
+.eyebrow {
+    color: #294b73;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+}
+
+
+
+.dashboard-page .content-card {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.dashboard-page .table-wrap {
+    width: 100%;
+}
+
+.dashboard-page table {
+    width: 100%;
+}
+
+.dashboard-page td a {
+    color: #294b73;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dashboard-page td a:last-child {
+    color: #bd5555;
+    margin-left: 8px;
+}
+
+.dashboard-page td a:hover {
+    text-decoration: underline;
+}
+
+
+
+.dashboard-page>ul {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.dashboard-page>ul li {
+    list-style: none;
+}
+
+.dashboard-page>ul a {
+    display: inline-block;
+    margin: 7px 0;
+}
+
+
+
+body:not(.dashboard-page) {
+    min-height: 100vh;
+    background: #f5f6f8;
+    color: #263445;
+    padding: 40px 7%;
+    font-family: Arial, sans-serif;
+}
+
+body:not(.dashboard-page) h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+body:not(.dashboard-page) form {
+    max-width: 650px;
+    padding: 27px;
+    background: white;
+    border: 1px solid #e1e5e9;
+    border-radius: 7px;
+}
+
+body:not(.dashboard-page) form div {
+    margin-bottom: 18px;
+}
+
+body:not(.dashboard-page) label {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+body:not(.dashboard-page) input,
+body:not(.dashboard-page) select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #dce1e7;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+body:not(.dashboard-page) button {
+    background: #294b73;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body:not(.dashboard-page) button:hover {
+    background: #1e3857;
+}
+
+body:not(.dashboard-page)>a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #294b73;
+    font-weight: bold;
+}
+
+
+
+@media(max-width: 650px) {
+    .dashboard-page {
+        padding: 20px 5%;
+    }
+
+    .page-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .page-caption {
+        display: none;
+    }
+
+    .dashboard-page td,
+    .dashboard-page th {
+        padding: 11px;
+    }
+
+    body:not(.dashboard-page) {
+        padding: 20px 5%;
+    }
+}

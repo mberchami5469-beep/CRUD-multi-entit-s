@@ -74,8 +74,8 @@ if (
 <head>
     <meta charset="UTF-8">
     <title>Modifier un étudiant</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
 
