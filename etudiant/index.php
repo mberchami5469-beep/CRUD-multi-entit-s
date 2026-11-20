@@ -70,7 +70,7 @@ $etudiants = $statement->fetchAll(
                 <th>Prénom</th>
                 <th>Email</th>
                 <th>Date naissance</th>
-                <th>Formation</th>
+                
                 <th>Actions</th>
             </tr>
         </thead>
