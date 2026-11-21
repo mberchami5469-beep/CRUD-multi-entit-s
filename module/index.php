@@ -32,7 +32,7 @@ $module = $statement->fetchAll(
     <meta charset="UTF-8">
     <title>Modules</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/pages.css">
 </head>
 
 <body class="dashboard-page">
