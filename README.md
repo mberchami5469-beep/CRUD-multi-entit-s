@@ -157,26 +157,9 @@ C:\xampp\htdocs\
 
 Le script SQL crée automatiquement la base de données `tp7_crud`, les tables et les données de test.
 
-### Étape 3 : Configurer la connexion PDO
 
-Vérifier le fichier `database/connexion.php` :
 
-```php
-<?php
-
-$connexion = new PDO(
-    "mysql:host=localhost;dbname=tp7_crud;charset=utf8mb4",
-    "root",
-    "",
-    [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-    ]
-);
-
-```
-
-### Étape 4 : Lancer l'application
+### Étape 3 : Lancer l'application
 
 Ouvrir le navigateur et accéder à :
 
