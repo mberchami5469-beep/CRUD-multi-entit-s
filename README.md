@@ -152,7 +152,7 @@ C:\xampp\htdocs\
 
 1. Ouvrir phpMyAdmin : http://localhost/phpmyadmin
 2. Cliquer sur l'onglet Importer.
-3. Sélectionner le fichier `database/tp7_crud.sql`.
+3. Sélectionner le fichier `database/db.sql`.
 4. Lancer l'importation.
 
 Le script SQL crée automatiquement la base de données `tp7_crud`, les tables et les données de test.
